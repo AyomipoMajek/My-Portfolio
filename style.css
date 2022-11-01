@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: white;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  color: #6070ff;
+}
+
+/* about me */
+
+.text-box {
+  margin-left: 8%;
+  margin-top: 20%;
+}
+
+.text-box h1 {
+  font-size: 40px;
+  color: #172b4d;
+  align-items: center;
+}
+
+.text-box p {
+  line-height: 20px;
+  font-weight: 300;
+  width: 270px;
+  align-items: center;
+  color: #344563;
+}
+
+#social-media h3 {
+  margin-top: 15px;
+  width: 130px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  padding-left: 8%;
+}
+
+/* social media logos */
+#social-media {
+  margin-top: 10px;
+}
+
+#social-media .logo {
+  float: left;
+  color: #344563;
+  padding-left: 8%;
+  width: 10px;
+}
+
+/* background design */
+
+#background .shape-1 {
+  position: absolute;
+  width: 97px;
+  height: 28px;
+  left: 220px;
+  top: 80px;
+  transform: rotate(-5deg);
+}
+
+#background .shape-2 {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  left: 250px;
+  top: 115px;
+}
+
+#background .shape-3 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 180px;
+  top: 50px;
+}
+
+#background .shape-4 {
+  position: absolute;
+  width: 26.46px;
+  height: 4.73px;
+  left: 110px;
+  top: 85px;
+}
+
+#background .shape-5 {
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  left: 115px;
+  top: 95px;
+  transform: rotate(52.97deg);
+}
+
+#background .shape-6 {
+  position: absolute;
+  width: 38.5px;
+  height: 19.25px;
+  left: 0.1px;
+  top: 60px;
+  transform: rotate(-1deg);
+}
+
+#background .shape-7 {
+  position: absolute;
+  width: 51.99px;
+  height: 9.3px;
+  left: 0.1px;
+  top: 40px;
+  transform: rotate(-1deg);
+}
+
+#background .shape-8 {
+  position: absolute;
+  width: 24.14px;
+  height: 12.07px;
+  left: 250px;
+  top: 390px;
+  transform: rotate(3deg);
+}
+
+#background .shape-9 {
+  position: absolute;
+  width: 30.1px;
+  height: 30.1px;
+  left: 240px;
+  top: 403px;
+  transform: rotate(-10deg);
+}
+
+#background .shape-10 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 190px;
+  top: 500px;
+}
+
+#background .shape-11 {
+  position: absolute;
+  width: 68.06px;
+  height: 12.18px;
+  left: 142px;
+  top: 500px;
+  transform: rotate(-4deg);
+}
+
+#background .shape-12 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 40px;
+  top: 500px;
+}
