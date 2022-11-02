@@ -7,7 +7,6 @@
 body {
   background-image: url('images/Background.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: 70% 50%;
 }
 
@@ -66,4 +65,55 @@ nav {
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.container {
+  width: 295px;
+  height: 220px;
+  background: url(blog_drbl_4x.png);
+  border-radius: 30px;
+  padding-left: 10px;
+}
+
+#column {
+  font-weight: 750;
+  color: #344563;
+  display: flex;
+  width: 240px;
+  height: 45px;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.container p {
+  width: 295px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#work {
+  display: flex;
+  width: 170.17px;
+  height: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #6070ff;
+  background: #ebebff;
+}
+
+#view {
+  position: absolute;
+  width: 124px;
+  height: 48px;
+  left: 10px;
+  margin-top: 610px;
+  top: calc(50% - 48px / 2);
 }
