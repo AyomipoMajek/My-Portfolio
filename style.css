@@ -26,37 +26,46 @@ nav {
   color: #6070ff;
 }
 
-/* about me */
-
-.intro {
-  margin-left: 8%;
-  margin-top: 20%;
+.intro h1 {
+  width: 300px;
+  height: 150px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 10px;
 }
 
-.intro h1 {
-  font-size: 40px;
-  color: #172b4d;
-  align-items: center;
+section p {
+  width: 295px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 10px;
 }
 
 .intro p {
-  line-height: 20px;
-  font-weight: 300;
-  width: 270px;
-  align-items: center;
-  color: #344563;
+  width: 300px;
+  height: 146px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 
-.intro h3 {
-  width: 130px;
+.intro a {
+  width: 117px;
   height: 24px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 40px;
   color: #7f8cff;
+  padding-left: 10px;
 }
-
-/* background design */
 
 .social-icons {
   display: flex;
@@ -65,22 +74,29 @@ nav {
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
-  padding-left: 25px;
 }
 
-.page-2 .container {
+.container {
   width: 295px;
-  height: 240px;
-  background: url(blog_drbl_4x.png);
-  border-radius: 30px;
+  height: 220px;
+  padding-top: 300px;
   padding-left: 10px;
-  padding-top: 60px;
 }
 
-#text {
+.page-2 .page-3 .page-4 .page-5 .about-myself {
+  padding: 16px;
+  gap: 12px;
+}
+
+section .heading {
   width: 295px;
   height: 36px;
-  line-height: 70px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  display: grid;
+  padding-bottom: 50px;
+  padding-left: 10px;
 }
 
 .column {
@@ -92,239 +108,39 @@ nav {
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
-}
-
-.container p {
-  width: 295px;
-  height: 76px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.work {
-  display: flex;
-  width: 170.17px;
-  height: 15px;
-  font-weight: 600;
-  font-size: 12px;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  margin: 135px 0;
-  color: #6070ff;
-  background: #ebebff;
-}
-
-.view {
-  position: absolute;
-  width: 124px;
-  height: 48px;
-  left: 10px;
-  margin-top: 675px;
-  top: calc(50% - 48px / 2);
-}
-
-.page-3 .container-3 {
-  width: 295px;
-  height: 220px;
-  background: url(blog_drbl_4x.png);
-  border-radius: 30px;
   padding-left: 10px;
 }
 
-#text-3 {
-  padding-top: 15px;
-}
-
-.column-3 {
-  font-weight: 750;
-  color: #344563;
-  display: flex;
-  width: 240px;
-  height: 45px;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-.container-3 p {
-  width: 295px;
-  height: 76px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.work-3 {
-  display: flex;
-  width: 203px;
-  height: 24px;
-  font-weight: 600;
-  font-size: 12px;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 4px 12px;
-  margin-top: -20px;
+.button {
+  top: 50%;
+  padding: 15px;
   border-radius: 8px;
-  color: #6070ff;
-  background: #ebebff;
-}
-
-.view-3 {
-  position: absolute;
-  width: 124px;
-  height: 48px;
-  left: 10px;
-  margin-top: 1250px;
-  top: calc(50% - 48px / 2);
-}
-
-.page-4 .container-4 {
-  width: 295px;
-  height: 220px;
-  margin-top: 350px;
+  color: #396df2;
+  border-color: #396df2;
+  background-color: #fff;
+  font-size: 15px;
   padding-left: 10px;
-  background: url(image_processing20200716-21735-f07s4k.png);
-  border-radius: 8px;
 }
 
-#text-4 {
-  padding-top: 15px;
-}
-
-.column-4 {
-  font-weight: 750;
-  color: #344563;
-  display: flex;
-  width: 240px;
-  height: 45px;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-.container-4 p {
-  width: 295px;
-  height: 76px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.work-4 {
-  display: flex;
-  width: 203px;
-  height: 24px;
-  font-weight: 600;
-  font-size: 12px;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 4px 12px;
-  margin-top: -20px;
-  border-radius: 8px;
-  color: #6070ff;
-  background: #ebebff;
-}
-
-.view-4 {
-  position: absolute;
-  width: 124px;
-  height: 48px;
-  left: 10px;
-  margin-top: 1780px;
-  top: calc(50% - 48px / 2);
-}
-
-.page-5 .container-5 {
-  width: 295px;
-  height: 220px;
-  margin-top: 300px;
-  padding-left: 10px;
-  background: url(image_processing20200427-30692-7af91d.png);
-  border-radius: 8px;
-}
-
-#text-5 {
-  padding-top: 15px;
-}
-
-.column-5 {
-  font-weight: 750;
-  color: #344563;
-  display: flex;
-  width: 240px;
-  height: 45px;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-.container-5 p {
-  width: 295px;
-  height: 76px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.work-5 {
-  display: flex;
-  width: 203px;
-  height: 24px;
-  font-weight: 600;
-  font-size: 12px;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 4px 12px;
-  margin-top: -20px;
-  border-radius: 8px;
-  color: #6070ff;
-  background: #ebebff;
-}
-
-.view-5 {
-  position: absolute;
-  width: 124px;
-  height: 48px;
-  left: 10px;
-  margin-top: 2300px;
-  top: calc(50% - 48px / 2);
-}
-
-.page-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 114px 24px;
-  gap: 24px;
-  position: absolute;
-  width: 375px;
-  height: 1125.15px;
-  left: calc(50% - 330px / 2);
-  top: 2600px;
-}
-
-.about-myself {
-  width: 370px;
+.about-myself h1 {
+  padding-top: 90px;
+  width: 327px;
   height: 101px;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 30px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .about-myself p {
-  width: 290px;
+  width: 300px;
   height: 144px;
-  padding-top: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  padding-left: 10px;
 }
 
 .about-myself a {
@@ -332,59 +148,33 @@ nav {
   height: 24px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 40px;
   color: #7f8cff;
+  padding-left: 10px;
 }
 
-.social-icons-2 {
+.others ul {
   display: flex;
-  width: 170.17px;
-  height: 45px;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  padding-left: 1px;
-}
-
-.link-1 {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding: 12px;
-  gap: 10px;
-  width: 162px;
-  height: 48px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-}
-
-.others {
-  position: absolute;
-  height: 24px;
-  left: 10px;
-  right: 78px;
-  top: calc(42% - 24px / 2);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 50px;
-  display: inline-block;
-  align-items: center;
-  padding-left: 25px;
+  flex-direction: column;
+  padding: 1px;
+  padding-top: 25px;
+  width: 300px;
+  height: 200.15px;
+  font-weight: 550;
+  padding-left: 10px;
   list-style-type: none;
 }
 
 .others span {
-  height: 18px;
-  width: 18px;
-  padding-left: 140px;
+  padding-left: 160px;
 }
 
-.sub-lang {
-  width: 170.17px;
-  list-style-type: none;
-  padding-top: 30px;
+#two {
+  padding-left: 212px;
+}
+
+.others ul li a {
+  width: 180px;
+  height: 200px;
+  padding-left: 1px;
 }
