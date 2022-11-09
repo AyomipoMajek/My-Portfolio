@@ -139,7 +139,7 @@ section .heading-2 {
   background-color: #ebebff;
 }
 
-.about-myself h1 {
+.about-myself hx {
   padding-top: 90px;
   width: 300px;
   height: 101px;
@@ -192,16 +192,18 @@ section .heading-2 {
 
 .formsection {
   background-image: url('images/Contact\ me.jpg');
-  width: 300px;
+  content: '';
+  width: 100%;
+  position: absolute;
   margin-top: 300px;
   background-repeat: no-repeat;
-  height: 779px;
+  height: 700px;
 }
 
-.formsection h1 {
+.formsection hx {
   padding-top: 100px;
   padding-left: 43px;
-  width: 290px;
+  width: 90%;
   height: 56px;
   left: -213px;
   top: 4734px;
@@ -230,41 +232,53 @@ section .heading-2 {
 }
 
 .contact-box {
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   padding-top: 80px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 #name {
-  width: 90%;
-  height: 40px;
+  width: 80%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  margin-left: 25px;
+  border-radius: 8px;
   background: #fff;
   border: 1px solid #cfd8dc;
-  border-radius: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 3s;
 }
 
 #mail {
-  width: 90%;
-  height: 40px;
+  width: 80%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  margin-left: 25px;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  margin-top: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 3s;
 }
 
 #msg {
-  width: 90%;
+  width: 80%;
   height: 120px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  margin-left: 25px;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  margin-top: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 3s;
 }
 
-.button-2 {
+.btn {
   top: 50%;
   padding: 15px;
   border-radius: 8px;
@@ -272,9 +286,9 @@ section .heading-2 {
   background-color: #fff;
   border: 1px solid #cfd8dc;
   font-size: 15px;
-  padding-left: 10px;
+  margin-left: 25px;
 }
 
-.button-2:hover {
+.btn:hover {
   background-color: #ebebff;
 }
