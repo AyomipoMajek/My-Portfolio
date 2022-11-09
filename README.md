@@ -1,8 +1,8 @@
 # Portfolio Project
-This project contains my portfolio, coded according to requirements provided by Microverse Inc
+**This project contains my portfolio, coded according to requirements provided by Microverse Inc**
 
 # Project Name
-My Portfolio
+**My Portfolio**
 
 # This project was built with:
 HTML5 
@@ -16,6 +16,14 @@ VS Code
 GitHub: @AyomipoMajek
 Twitter: @pawroyale_
 LinkedIn: Ayomipo Majek
+
+# Author2:
+GitHub: @Feliverse
+Twitter: @FelipeHaybar
+
+# Author3:
+GitHub: @githubhandle
+Twitter: @EldonRatzlaff
 
 # Template source: 
 Figma
