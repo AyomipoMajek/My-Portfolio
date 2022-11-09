@@ -167,25 +167,29 @@
   </section>
 </body>
 
-<footer>
+<footer class="formsection">
   <h1>Contact me</h1>
   <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it</p>
+  
   <form>
-    <ul>
-      <li>
+    <div class="contact-box">
+      <div class="fullname">
         <label for="name"></label>
-        <input type="text" id="name" name="user-name" maxlength="30" placeholder="enter full name">
-      </li>
-      <li>
+        <input type="text" id="name" name="user-name" maxlength="30" placeholder="enter full name" required>
+      </div>
+      <div class="email">
         <label for="email"></label>
-        <input type="email" id="mail" name="user_email" placeholder="majekfelipeeldon@gmail.com">
-      </li>
-      <label for="msg"></label>
-      <textarea id="msg" name="user_message" maxlength="500" placeholder="Write your message here"></textarea>
-      <li class="button">
-        <button type="submit">Get in touch</button>
-      </li>
-    </ul>
+        <input type="email" id="mail" name="user_email" placeholder="enter email" required>
+      </div>
+      <div class="message">
+        <label for="msg"></label>
+        <textarea id="msg" name="user_message" maxlength="500" placeholder="Write your message here" required></textarea>
+      </div>
+    </div>
+    <nav>
+      <button type="button-2" class="button">Get in touch</button>
+    </nav>
   </form>
 </footer>
 </html>
+
