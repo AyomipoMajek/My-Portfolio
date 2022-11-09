@@ -10,7 +10,7 @@
 * Linters
 
 # This project was built using:
-*VS Code
+* VS Code
 
 # Author:
 * GitHub: @AyomipoMajek
