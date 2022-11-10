@@ -11,8 +11,8 @@
 
 <body>
   <header class="hero">
-    <nav>
-      <a href="#"><img src="images/My Logo.png" class="logo"></a>
+    <nav class="logo">
+      <a href="#" class="logo">My Logo</a>
       <i class="fa-solid fa-bars"></i>
     </nav>
   </header>
@@ -44,7 +44,7 @@
         <a href="#"><img src="images/Snapshoot Portfolio.jpg"></a>
       </div>
       <div class="heading">
-        <hx>Tonic</hx>
+        <h2>Tonic</h2>
       </div>
       <ul class="column">CANOPY
         <li><a href="#"><img src="images/point.jpg"></a></li>
@@ -66,7 +66,7 @@
         <a href="#"><img src="images/Snapshoot Portfolio 2.jpg"></a>
       </div>
       <div class="heading-2">
-        <hx>Multi-Post <br> Stories</hx>
+        <h2>Multi-Post <br> Stories</h2>
       </div>
       <ul class="column">CANOPY
         <li><a href="#"><img src="images/point.jpg"></a></li>
@@ -88,7 +88,7 @@
         <a href="#"><img src="images/Snapshoot Portfolio 3.jpg"></a>
       </div>
       <div class="heading">
-        <hx>Tonic</hx>
+        <h2>Tonic</h2>
       </div>
       <ul class="column">CANOPY
         <li><a href="#"><img src="images/point.jpg"></a></li>
@@ -110,7 +110,7 @@
         <a href="#"><img src="images/Snapshoot Portfolio 4.jpg"></a>
       </div>
       <div class="heading-2">
-        <hx>Multi-Post <br> Stories</hx>
+        <h2>Multi-Post <br> Stories</h2>
       </div>
       <ul class="column">CANOPY
         <li><a href="#"><img src="images/point.jpg"></a></li>
@@ -128,7 +128,9 @@
     </div>
 
     <div class="about-myself">
-      <h1>About <br> Myself</h1>
+      <div class="heading-3">
+        <h2>About <br> Myself</h2>
+      </div> 
       <p>Hello I'm a software developer! I can help <br> you build a product , feature or website <br> Look through some of my work and <br> experience! If you like what you see and <br> have a project you need coded, don't <br> hestiate to contact me.</p>
       <a class="links">LET'S CONNECT</a>
       <div>
@@ -166,4 +168,32 @@
     </div>
   </section>
 </body>
+
+<section class="formsection">
+  <div class="heading-4">
+    <h2>Contact me</h2>
+  </div>
+  <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it</p>
+  
+  <form action="https://formspree.io/f/mjvzjjpb" method="post"></form>
+    <div class="contact-box">
+      <div class="fullname">
+        <label for="name"></label>
+        <input type="text" id="name" name="user-name" maxlength="30" placeholder="enter full name" required>
+      </div>
+      <div class="email">
+        <label for="email"></label>
+        <input type="email" id="mail" name="user_email" placeholder="enter email" required>
+      </div>
+      <div class="message">
+        <label for="msg"></label>
+        <textarea id="msg" name="user_message" maxlength="500" placeholder="Write your message here" required></textarea>
+        <button class="btn">Get in touch</button>
+      </div>
+    </div>
+  </form>
+</section>
 </html>
+
+
+
