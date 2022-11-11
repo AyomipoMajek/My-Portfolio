@@ -158,6 +158,7 @@ p {
   background-color: #fff;
   font-size: 15px;
   padding-left: 10px;
+  transition: .4s;
 }
 
 .button:hover {
