@@ -5,11 +5,7 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
   background-color: #e5e5e5;
-  gap: 114px;
 }
 
 .page-1 {
@@ -57,6 +53,8 @@ body {
   box-sizing: border-box;
   max-width: 1104px;
   padding: 0 6.4%;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
 }
 
 .intro h1 {
@@ -76,6 +74,10 @@ body {
   align-items: center;
   list-style-type: none;
   gap: 20px;
+}
+
+.social-icons:hover {
+  transition: 2s;
 }
 
 .intro a {
@@ -172,7 +174,7 @@ p {
   padding: 0;
   background-color: #fff;
   width: 100%;
-  height: 100vh;
+  height: unset;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,7 +268,6 @@ p {
   height: 100vh;
   width: 100vw;
   background-color: #6070ff;
-  background-image: url("img/contact form shapes-mobile.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -355,6 +356,12 @@ p {
   background-color: #ebebff;
 }
 
+@media (max-width: 768px){
+  #menu {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .intro h1 {
     font-size: 48px;
@@ -364,18 +371,48 @@ p {
   .intro p {
     font-size: 20px;
     line-height: 28px;
+    width: 600px;
   }
 
-  .menu ul {
-    gap: 32px;
+  .intro a {
+    font-size: 16px;
   }
 
-  menu p {
-    display: inline;
+  .logo a {
+    margin-left: 50px;
+  }
+
+  .logo i {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 68%;
+  }
+
+  #menu li:hover {
+    color: #396df2;
+    transition-duration: 1000ms;
+  }
+
+  #menu li {
+    font-weight: 550px;
+    font-size: 15px;
+    gap: 70px;
+    padding-left: 15px;
   }
 
   .page-1 {
-    background-image: url("images/Background.jpg");
+    background-image: url("images/Header\ bg.jpg");
+  }
+
+  .work-section p {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .page-2, .page-3, .page-4, .page-5 {
@@ -399,9 +436,68 @@ p {
     align-self: end;
   }
 
+  #snapshoot-R {
+    grid-column: 2 / 3;
+  }
 
+  .others {
+    justify-content: center;
+  }
 
+  .about-myself {
+    background-image: none;
+    flex-direction: row;
+    padding: 20px;
+  }
 
+  .about-myself p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .lang {
+    margin-left: 5%;
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .lang li {
+    align-items: start;
+    flex-direction: column;
+    width: 20%;
+    font-weight: 500;
+    min-width: fit-content;
+    max-width: 100px;
+  }
+
+  .lang p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .heading-2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  #name, #mail, #msg {
+    width: 400px;
+    border-radius: 4px;
+    margin-left: 150px;
+  }
+
+  .formsection p {
+    font-weight: 100;
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  .formsection button {
+    align-self: center;
+  }
+
+  
 
 
 }
