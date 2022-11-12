@@ -471,13 +471,20 @@ p {
     padding: 9.6%;
   }
 
+  .about-myself h2 {
+    padding-top: 70px;
+    line-height: 50px;
+    padding-bottom: 20px;
+  }
+
   .about-myself-2 {
     width: 50%;
   }
 
   .about-myself p {
     font-size: 15px;
-    line-height: 28px;
+    line-height: 20px;
+    padding-bottom: 20px;
   }
 
   #my-works-2 {
