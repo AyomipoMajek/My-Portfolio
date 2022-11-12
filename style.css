@@ -170,11 +170,10 @@ p {
   box-sizing: border-box;
   padding: 0 6.4%;
   background-image: none;
-  height: 70vh;
   padding: 0;
   background-color: #fff;
   width: 100%;
-  height: unset;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,6 +181,7 @@ p {
   box-sizing: border-box;
   max-width: 1104px;
   padding: 0 6.4%;
+  margin-bottom: 0px;
 }
 
 .about-myself h2 {
@@ -200,7 +200,7 @@ p {
   height: 24px;
   font-weight: 500;
   font-size: 16px;
-  color: #7f8cff
+  color: #7f8cff;
 }
 
 .button-2 {
@@ -236,6 +236,7 @@ p {
   border-top: 0;
   border-left: 0;
   border-right: 0;
+
 }
 
 .my-works h3 {
@@ -279,9 +280,11 @@ p {
   box-sizing: border-box;
   padding: 0 6.2%;
   gap: 12px;
+  margin-top: 100px;
 }
 
 .heading-2 {
+  padding-top: 30px;
   font-size: 30px;
   line-height: 55px;
   text-align: center;
@@ -362,7 +365,8 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
+
   .intro h1 {
     font-size: 48px;
     line-height: 60px;
@@ -371,7 +375,7 @@ p {
   .intro p {
     font-size: 20px;
     line-height: 28px;
-    width: 600px;
+    width: 90%;
   }
 
   .intro a {
@@ -415,6 +419,11 @@ p {
     line-height: 28px;
   }
 
+  .page-5 p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   .page-2, .page-3, .page-4, .page-5 {
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -442,16 +451,24 @@ p {
 
   .others {
     justify-content: center;
+    width: 60%;
   }
 
   .about-myself {
     background-image: none;
+    display: flex;
     flex-direction: row;
     padding: 20px;
+    height: 700px;
+    padding: 9.6%;
+  }
+
+  .about-myself-2 {
+    width: 40%;
   }
 
   .about-myself p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 28px;
   }
 
@@ -467,7 +484,7 @@ p {
     width: 20%;
     font-weight: 500;
     min-width: fit-content;
-    max-width: 100px;
+    max-width: 100%;
   }
 
   .lang p {
@@ -496,8 +513,4 @@ p {
   .formsection button {
     align-self: center;
   }
-
-  
-
-
 }
