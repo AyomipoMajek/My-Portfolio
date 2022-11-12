@@ -373,13 +373,13 @@ p {
   }
 
   .intro p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 28px;
     width: 90%;
   }
 
   .intro a {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .logo a {
@@ -393,7 +393,6 @@ p {
   #menu {
     display: flex;
     margin: auto;
-    width: 90%;
     justify-content: space-between;
     margin-left: 68%;
   }
@@ -424,12 +423,12 @@ p {
   }
 
   .work-section p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 28px;
   }
 
   .page-5 p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 28px;
   }
 
@@ -463,24 +462,39 @@ p {
 
   .others {
     justify-content: center;
-    width: 60%;
+    width: 50%;
   }
 
   .about-myself {
     background-image: none;
     display: flex;
     flex-direction: row;
+    width: 100%;
     height: 700px;
     padding: 9.6%;
   }
 
   .about-myself-2 {
-    width: 40%;
+    width: 50%;
   }
 
   .about-myself p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 28px;
+  }
+
+  #my-works-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3.7%;
+    box-sizing: border-box;
+    padding: 24px 12px;
+    border-bottom: 0px;
+    border-color: #dfe1e6;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
   }
 
   .lang {
