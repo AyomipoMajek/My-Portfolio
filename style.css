@@ -318,7 +318,6 @@ p {
   border: 1px solid #cfd8dc;
   font-size: 1.1rem;
   margin-bottom: 10px;
-  transition: 3s;
 }
 
 #mail {
@@ -330,7 +329,6 @@ p {
   border-radius: 8px;
   font-size: 1.1rem;
   margin-bottom: 10px;
-  transition: 3s;
 }
 
 #msg {
@@ -343,7 +341,6 @@ p {
   border-radius: 8px;
   font-size: 1.1rem;
   margin-bottom: 10px;
-  transition: 3s;
 }
 
 .btn {
