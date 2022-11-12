@@ -162,7 +162,7 @@ p {
   background-color: #fff;
   font-size: 15px;
   padding-left: 10px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .button:hover {
@@ -183,7 +183,6 @@ p {
   justify-content: center;
   gap: 12px;
   max-width: 1104px;
-  margin-bottom: 0px;
 }
 
 .about-myself h2 {
