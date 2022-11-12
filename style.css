@@ -4,7 +4,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
+main {
   background-color: #e5e5e5;
 }
 
@@ -68,6 +68,7 @@ body {
   align-items: center;
   list-style-type: none;
   gap: 20px;
+  padding-top: 10px;
 }
 
 .social-icons:hover {
@@ -195,6 +196,7 @@ p {
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
+  padding-bottom: 10px;
 }
 
 .about-myself a {
