@@ -282,6 +282,8 @@ p {
   padding: 0 6.2%;
   gap: 12px;
   margin-top: 10px;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
 }
 
 .heading-2 {
