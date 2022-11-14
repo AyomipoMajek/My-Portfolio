@@ -527,7 +527,6 @@ p {
     margin-left: 100px;
   }
 
-
   #shape-1 {
     padding-left: 700px;
   }
@@ -561,9 +560,6 @@ p {
     flex-direction: column;
     width: 100%;
     height: 60vh;
-  }
-
-  .others {
     justify-content: center;
     width: 50%;
   }
