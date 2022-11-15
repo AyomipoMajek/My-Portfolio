@@ -592,7 +592,6 @@ p {
     align-self: center;
   }
 
-
   #name,
   #mail,
   #msg {
@@ -667,7 +666,7 @@ p {
     font-size: 25px;
     line-height: 35px;
   }
-  
+
   .intro p {
     font-weight: 400;
     font-size: 25px;
