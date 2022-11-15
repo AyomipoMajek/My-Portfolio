@@ -370,6 +370,11 @@ p {
     line-height: 60px;
   }
 
+  p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
   .intro p {
     font-size: 15px;
     line-height: 28px;
@@ -418,11 +423,6 @@ p {
 
   .page-1 {
     background-image: url("images/Header\ bg.jpg");
-  }
-
-  p {
-    font-size: 15px;
-    line-height: 28px;
   }
 
   .page-2,
@@ -551,6 +551,17 @@ p {
     padding-top: 60px;
   }
 
+  .works li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    background: #ebebff;
+    border-radius: 8px;
+    padding: 4px 12px;
+  }
+
   #menu li {
     font-weight: 550px;
     font-size: 20px;
@@ -562,14 +573,14 @@ p {
     font-size: 18px;
   }
 
-  .intro p {
-    font-weight: 400;
-    font-size: 20px;
+  p {
+    font-size: 18px;
     line-height: 28px;
   }
 
-  p {
-    font-size: 18px;
+  .intro p {
+    font-weight: 400;
+    font-size: 20px;
     line-height: 28px;
   }
 
@@ -581,16 +592,6 @@ p {
     align-self: center;
   }
 
-  .works li {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: #6070ff;
-    background: #ebebff;
-    border-radius: 8px;
-    padding: 4px 12px;
-  }
 
   #name,
   #mail,
@@ -651,7 +652,7 @@ p {
     font-size: 20px;
     padding-left: 10px;
     margin-top: 15px;
-}
+  }
 
   .my-works h3 {
     font-weight: 600;
@@ -662,13 +663,13 @@ p {
 }
 
 @media (min-width: 1440px) {
-  .intro p {
-    font-weight: 400;
+  p {
     font-size: 25px;
     line-height: 35px;
   }
-
-  p {
+  
+  .intro p {
+    font-weight: 400;
     font-size: 25px;
     line-height: 35px;
   }
