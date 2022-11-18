@@ -166,7 +166,7 @@ p {
 }
 
 .button:hover {
-  background-color: #6070ff;
+  background-color: #c9cdf3;
 }
 
 .about-myself {
@@ -216,6 +216,10 @@ p {
   font-size: 15px;
   padding-left: 10px;
   margin-top: 15px;
+}
+
+.button-2:hover {
+  background-color: #ebebff;
 }
 
 .others {
