@@ -308,6 +308,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 90%;
+  justify-content: center;
 }
 
 #name {
@@ -597,7 +598,6 @@ p {
   #msg {
     width: 400px;
     border-radius: 4px;
-    margin-left: 190px;
   }
 
   .others {
