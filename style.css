@@ -401,6 +401,12 @@ p {
   background-color: #ebebff;
 }
 
+@media (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .intro h1 {
     font-size: 48px;
