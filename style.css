@@ -32,7 +32,7 @@ main {
 }
 
 a {
-  color:#fff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -400,12 +400,6 @@ p {
 .btn:hover {
   background-color: #ebebff;
 }
-
-/*@media (max-width: 768px) {
-  #menu {
-    display: none;
-  }
-}*/
 
 @media (min-width: 768px) {
   .intro h1 {
