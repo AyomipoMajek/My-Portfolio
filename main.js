@@ -2,6 +2,7 @@
 const menutray = document.querySelector('.fa-solid');
 const menuContainer = document.querySelector('.menu-container');
 const closebtn = document.querySelector('.close-btn');
+const menuList = document.querySelector('.menuList')
 
 //open menu
 const openMenu = function() {
@@ -14,3 +15,4 @@ const closeMenu = function() {
   menuContainer.style.display = "none";
 }
 closebtn.addEventListener('click',closeMenu );
+menuList.addEventListener('click',closeMenu);

@@ -31,6 +31,11 @@ main {
   color: #6070ff;
 }
 
+a {
+  color:#fff;
+  text-decoration: none;
+}
+
 .logo a {
   text-decoration: none;
   font-weight: 700;
@@ -45,9 +50,12 @@ main {
 
 .menu-container i {
   color: #fff;
-  padding-left: 85%;
-  padding-top: 20px;
-  font-size: 20px;
+  position: fixed;
+  top: 20px;
+  right: 15%;
+  height: 40px;
+  width: 20px;
+  font-size: 22px;
 }
 
 .menu-container {
@@ -55,13 +63,14 @@ main {
   backdrop-filter: blur(5px);
   height: 100vh;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   padding: 8px;
+  display: none;
 }
 
-.menu-list {
+.menuList {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -70,11 +79,6 @@ main {
   list-style: none;
   gap: 20px;
   padding-left: 20px;
-}
-
-a {
-  color:#fff;
-  text-decoration: none;
 }
 
 .intro {
