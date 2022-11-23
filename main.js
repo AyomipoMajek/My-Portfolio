@@ -86,9 +86,9 @@ const projects = [
   },
 ];
 
-// create modal
+//create modal
 const displayModal = (i) => {
-  document.getElementById(`${projects[i].id}`).addEventListener('click', () => {
+  document.getElementById(`${projects[i].btnId}`).addEventListener('click', () => {
     menutray.style.display = 'none';
     modalContainer.style.display = 'flex';
     projectName.innerText = projects[i].title;
@@ -122,8 +122,7 @@ projects.forEach((e, i) => {
         <button class="buttons" id="${projects[i].btnId}">See Project</button>
     </div>
     </div>`;
-    projectSection.insertAdjacentHTML('afterbegin',html);
-    displayModal(i);
+    projectSection.insertAdjacentHTML('afterbegin',html);displayModal(i);
 });
 
 const btnCLoseModal = document.querySelector('.close-modal');
