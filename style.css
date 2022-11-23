@@ -407,7 +407,7 @@ p {
 /* modal styling */
 .modal-container {
   align-self: center;
-  display: flex;
+  display: none;
   flex-direction: column;
   box-sizing: border-box;
   background-color: #fff;
@@ -430,6 +430,7 @@ p {
 }
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   bottom: 0;

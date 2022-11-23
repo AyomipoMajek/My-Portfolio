@@ -9,8 +9,8 @@ const projectName = document.querySelector('.title');
 const sectionLink = document.querySelector('.menuList');
 const projectImage = document.querySelector('.snapshoot');
 const projectDescription = document.querySelector('.paragraph');
-
-
+const modalOverlay = document.querySelector('.modal');
+const projectSection = document.querySelector('.works-section');
 //open menu
 const openMenu = function() {
   menuContainer.style.display = "flex";
@@ -28,7 +28,7 @@ const projects = [
   {
     id: 1,
     title: 'Tonic',
-    canopy: ['CANOPY', 'Back End Dev', '2015'],
+    column: ['CANOPY', 'Back End Dev', '2015'],
     dot: 'images/point.jpg',
     Paragraph: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
@@ -43,7 +43,7 @@ const projects = [
   {
     id: 2,
     title: 'Multi-Post Stories',
-    canopy: ['CANOPY', 'Back End Dev', '2015'],
+    column: ['CANOPY', 'Back End Dev', '2015'],
     dot: 'images/point.jpg',
     Paragraph: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
@@ -58,7 +58,7 @@ const projects = [
   {
     id: 3,
     title: 'Tonic',
-    canopy: ['CANOPY', 'Back End Dev', '2015'],
+    column: ['CANOPY', 'Back End Dev', '2015'],
     dot: 'images/point.jpg',
     Paragraph: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
@@ -73,7 +73,7 @@ const projects = [
   {
     id: 4,
     title: 'Multi-Post Stories',
-    canopy: ['CANOPY', 'Back End Dev', '2015'],
+    column: ['CANOPY', 'Back End Dev', '2015'],
     dot: 'images/point.jpg',
     Paragraph: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
@@ -87,7 +87,7 @@ const projects = [
 ];
 
 // create modal
-const diaplayModal = (i) => {
+const displayModal = (i) => {
   document.getElementById(`${projects[i].id}`).addEventListener('click', () => {
     menutray.style.display = 'none';
     modalContainer.style.display = 'flex';
@@ -97,15 +97,22 @@ const diaplayModal = (i) => {
   });
 };
 
-// Display
+// Display projects
 projects.forEach((e, i) => {
   const projectCard = document.createElement('div');
   projectCard.className = `project-card-${projects[i].id}`;
   const html = `
     <div class="project-wrapper-${projects[i].id}">
+    <ul class="column">
+          <li><a href="#"><img src="images/point.jpg" alt="highlight"></a></li>
+          <li>Back End Dev</li>
+          <li><a href="#"><img src="images/point.jpg" alt="highlight"></a></li>
+          <li>2015</li>
+        </ul>
     <img id=project-pic class"pict project-picture-${projects[i].id}" src = ${projects[i].image} alt=${projects[i].title}
     <div class="project-card-details-${projects[i].id}" id=project-card-details>
       <h4 class="project-name>${projects[i].title}<h4>
+      <p class="description-${projects[i].id}">${projects[i].Paragraph}</p>
       <ul class="card-tech">
         <li>${projects[i].technologies[0]}</li>
         <li>${projects[i].technologies[1]}</li>
@@ -114,14 +121,15 @@ projects.forEach((e, i) => {
         <button class="btn-see-project" id="${projects[i].id}">See this project &#10132</button>
     </div>
     </div>`;
-
+    projectSection.insertAdjacentHTML('afterbegin',html);
+    displayModal(i);
 });
 
 const btnCLoseModal = document.querySelector('.close-modal');
 const closeModal = function () {
   modalContainer.style.display = 'none';
   menutray.style.display = 'block';
-  modalContainer.style.backdrop-filter = 'none';
+  modalOverlay.style.display = 'none';
 };
 
 btnCLoseModal.addEventListener('click', closeModal);
