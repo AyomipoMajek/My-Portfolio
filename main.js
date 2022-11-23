@@ -102,23 +102,24 @@ projects.forEach((e, i) => {
   const projectCard = document.createElement('div');
   projectCard.className = `project-card-${projects[i].id}`;
   const html = `
-    <div class="project-wrapper-${projects[i].id}">
-    <ul class="column">
+    <div id=project-pages class="project-wrapper-${projects[i].id}">
+    <img class="snapshoot ${projects[i].contentDirection}" src="${projects[i].image}" alt="first project card picture">
+    <h2>${projects[i].title}</h2>
+    <section>
+        <ul class="column">CANOPY
           <li><a href="#"><img src="images/point.jpg" alt="highlight"></a></li>
           <li>Back End Dev</li>
           <li><a href="#"><img src="images/point.jpg" alt="highlight"></a></li>
           <li>2015</li>
         </ul>
-    <img id=project-pic class"pict project-picture-${projects[i].id}" src = ${projects[i].image} alt=${projects[i].title}
-    <div class="project-card-details-${projects[i].id}" id=project-card-details>
-      <h4 class="project-name>${projects[i].title}<h4>
-      <p class="description-${projects[i].id}">${projects[i].Paragraph}</p>
-      <ul class="card-tech">
+    </section>
+      <p>${projects[i].Paragraph}</p>
+      <ul class="works">
         <li>${projects[i].technologies[0]}</li>
         <li>${projects[i].technologies[1]}</li>
         <li>${projects[i].technologies[2]}</li>
       </ul>
-        <button class="btn-see-project" id="${projects[i].id}">See this project &#10132</button>
+        <button class="buttons" id="${projects[i].btnId}">See Project</button>
     </div>
     </div>`;
     projectSection.insertAdjacentHTML('afterbegin',html);
