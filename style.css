@@ -190,7 +190,7 @@ p {
   line-height: 24px;
 }
 
-.button {
+.buttons {
   width: fit-content;
   height: fit-content;
   top: 50%;
@@ -204,7 +204,7 @@ p {
   transition: 0.4s;
 }
 
-.button:hover {
+.buttons:hover {
   background-color: #c9cdf3;
 }
 
@@ -419,8 +419,6 @@ p {
   max-height: 95vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  transform: ;
-  transition: 0.9s;
 }
 
 .modal header {
@@ -434,9 +432,9 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
+  box-sizing: border-box;
   background: rgba(193, 199, 208, 0.5);
-  backdrop-filter: blur(9px);
-  transform: ;
+  backdrop-filter: blur(10px);
 }
 
 .close-modal {
@@ -540,10 +538,7 @@ p {
     background-image: url("images/Header\ bg.jpg");
   }
 
-  .page-2,
-  .page-3,
-  .page-4,
-  .page-5 {
+  #project-pages {
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 46px;
@@ -654,6 +649,74 @@ p {
   .formsection button {
     align-self: center;
   }
+
+  /* modal styling */
+.modal-container {
+  align-self: center;
+  display: none;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  border-radius: 16px;
+  padding: 16px;
+  gap: 18px;
+  margin: 24px;
+  max-height: 95vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal header {
+  display: flex;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(193, 199, 208, 0.5);
+  backdrop-filter: blur(9px);
+}
+
+.close-modal {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 3%;
+  right: 24px;
+  cursor: pointer;
+  justify-self: end;
+  border-style: none;
+  background: none;
+  font-size: 20px;
+}
+
+.modal-btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 8px;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.modal-btn img {
+  padding-left: 5px;
+}
+
+.side-description ul {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+/* modal styling end */
 }
 
 @media (min-width: 1024px) {
@@ -740,7 +803,7 @@ p {
     color: #7f8cff;
   }
 
-  .button {
+  .buttons {
     width: fit-content;
     height: fit-content;
     top: 50%;
@@ -754,7 +817,7 @@ p {
     transition: 0.4s;
   }
 
-  .button-2 {
+  .buttons-2 {
     width: fit-content;
     height: fit-content;
     top: 50%;
