@@ -3,31 +3,27 @@
 const menutray = document.querySelector('.fa-solid');
 const menuContainer = document.querySelector('.menu-container');
 const closebtn = document.querySelector('.close-btn');
-const menuList = document.querySelector('.menuList')
+const menuList = document.querySelector('.menuList');
 const modalContainer = document.querySelector('.modal-out');
 const projectName = document.querySelector('.title');
-const sectionLink = document.querySelector('.menuList');
 const projectImage = document.querySelector('.snapshoot');
 const projectDescription = document.querySelector('.paragraph');
 const modalOverlay = document.querySelector('.modal');
 const projectSection = document.querySelector('.works-section');
 const column = document.querySelector('.column');
-const column1 = document.querySelector('.column1');
-const column2 = document.querySelector('.column2');
-const column3 = document.querySelector('.column3');
 
-//open menu
-const openMenu = function() {
-  menuContainer.style.display = "flex";
-}
-menutray.addEventListener('click',openMenu );
+//  open menu
+const openMenu = function () {
+  menuContainer.style.display = 'flex';
+};
+menutray.addEventListener('click', openMenu);
 
-//close menu
-const closeMenu = function() {
-  menuContainer.style.display = "none";
-}
-closebtn.addEventListener('click',closeMenu );
-menuList.addEventListener('click',closeMenu);
+//  close menu
+const closeMenu = function () {
+  menuContainer.style.display = 'none';
+};
+closebtn.addEventListener('click', closeMenu);
+menuList.addEventListener('click', closeMenu);
 
 const projects = [
   {
@@ -35,9 +31,9 @@ const projects = [
     title: 'Tonic',
     column: ['CANOPY', 'Back End Dev', '2015'],
     dot: 'images/point.jpg',
-    Paragraph: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: `images/Snapshoot Portfolio.jpg`,
+    Paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'images/Snapshoot Portfolio.jpg',
     technologies: ['html', 'JavaScript', 'css'],
     liveVersion: '#',
     source: '#',
@@ -50,9 +46,9 @@ const projects = [
     title: 'Multi-Post Stories',
     column: ['CANOPY', 'Back End Dev', '2015'],
     dot: 'images/point.jpg',
-    Paragraph: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: `images/Snapshoot Portfolio 2.jpg`,
+    Paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'images/Snapshoot Portfolio 2.jpg',
     technologies: ['html', 'JavaScript', 'css'],
     liveVersion: '#',
     source: '#',
@@ -65,9 +61,9 @@ const projects = [
     title: 'Tonic',
     column: ['CANOPY', 'Back End Dev', '2015'],
     dot: 'images/point.jpg',
-    Paragraph: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: `images/Snapshoot Portfolio 3.jpg`,
+    Paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'images/Snapshoot Portfolio 3.jpg',
     technologies: ['html', 'JavaScript', 'css'],
     liveVersion: '#',
     source: '#',
@@ -80,9 +76,9 @@ const projects = [
     title: 'Multi-Post Stories',
     column: ['CANOPY', 'Back End Dev', '2015'],
     dot: 'images/point.jpg',
-    Paragraph: `A daily selection of privately personalized reads; no accounts or sign-ups required.`,
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    image: `images/Snapshoot Portfolio 4.jpg`,
+    Paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'images/Snapshoot Portfolio 4.jpg',
     technologies: ['html', 'JavaScript', 'css'],
     liveVersion: '#',
     source: '#',
@@ -91,7 +87,7 @@ const projects = [
   },
 ];
 
-//create modal
+//  create modal
 const displayModal = (i) => {
   document.getElementById(`${projects[i].btnId}`).addEventListener('click', () => {
     menutray.style.display = 'none';
@@ -134,7 +130,7 @@ projects.forEach((e, i) => {
         <button class="buttons" id="${projects[i].btnId}">See Project</button>
     </div>
     </div>`;
-    projectSection.insertAdjacentHTML('afterbegin',html);displayModal(i);
+  projectSection.insertAdjacentHTML('afterbegin', html); displayModal(i);
 });
 
 const btnCLoseModal = document.querySelector('.close-modal');
@@ -145,44 +141,3 @@ const closeModal = function () {
 };
 
 btnCLoseModal.addEventListener('click', closeModal);
-
-
-
-
-
-
-/* const workSection = document.querySelector('#work-section');
-
-function createProgrammingLanguage(x) {
-  let list = '';
-  for (let i = 0; i < projects[x].projectLanguages.length; i += 1) {
-    list += `<li>${projects[x].projectLanguages[i]}</li>`;
-  }
-  return list;
-}
-
-for (let i = 0; i < projects.length; i += 1) {
-  const projectCard = `
-  <section class="project" id="project-1">
-    <img class="snap ${projects[i].contentDirection}" src="${projects[i].image} alt="first card photo>
-    <h2>${projects[i].name}</h2>
-    <section>
-      <ul class="columnJS">
-        <li>CANOPY</li>
-        <li><images src="${projects[i].point}" alt="dot icon"}></li>
-        <li><span class="lightgray">${projects[i].columnli1}</span></li>
-        <li><images src=${projects[i].point}" alt="dot icon"></li>
-        <li><span class="lightgray">${projects[i].columnli2}</span></li>
-      </ul>
-    </section>
-    <p>${projects[i].paragraph}</p>
-    <ul class="programmingLanguages">
-      ${createProgrammingLanguages(i)}
-    </ul>
-    <button class="buttonJS" id=${projects[i].btnId}">See Project</button>
-  </section>
-    `;
-    workSection.innerHTML += projectCard;
-}
- `*/
-
