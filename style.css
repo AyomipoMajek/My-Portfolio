@@ -59,11 +59,11 @@ a {
 }
 
 .menu-container {
-  background-color: rgba(50, 70, 255, 0.8);
+  background-color: rgba(51, 65, 217, 0.8);
   backdrop-filter: blur(5px);
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 8px;
@@ -127,10 +127,7 @@ a {
   background: #e5e5e5;
 }
 
-.page-2,
-.page-3,
-.page-4,
-.page-5 {
+#project-pages {
   display: grid;
   background-color: #fff;
   margin: 6.4%;
@@ -166,6 +163,10 @@ ul {
   align-self: center;
 }
 
+.column li {
+  color: #7a869a;
+}
+
 .works li {
   font-weight: 500;
   font-size: 12px;
@@ -189,7 +190,7 @@ p {
   line-height: 24px;
 }
 
-.button {
+.buttons {
   width: fit-content;
   height: fit-content;
   top: 50%;
@@ -203,7 +204,7 @@ p {
   transition: 0.4s;
 }
 
-.button:hover {
+.buttons:hover {
   background-color: #c9cdf3;
 }
 
@@ -401,6 +402,88 @@ p {
   background-color: #ebebff;
 }
 
+/* modal styling */
+.modal-out {
+  display: none;
+  transition: 0.4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(193, 199, 208, 0.5);
+  backdrop-filter: blur(9.5px);
+}
+
+.modal-container {
+  display: flex;
+  align-self: center;
+  transition: 0.9s;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: #fff;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  border-radius: 16px;
+  padding: 16px;
+  gap: 18px;
+  margin: 24px;
+  max-height: 95vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal header {
+  display: flex;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  background: rgba(193, 199, 208, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.close-modal {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 3%;
+  right: 24px;
+  cursor: pointer;
+  justify-self: end;
+  border-style: none;
+  background: none;
+  font-size: 20px;
+}
+
+.modal-btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 8px;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.modal-btn img {
+  padding-left: 5px;
+}
+
+.side-description ul {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+/* modal styling end */
+
 @media (max-width: 768px) {
   #menu {
     display: none;
@@ -468,10 +551,7 @@ p {
     background-image: url("images/Header\ bg.jpg");
   }
 
-  .page-2,
-  .page-3,
-  .page-4,
-  .page-5 {
+  #project-pages {
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 46px;
@@ -582,6 +662,53 @@ p {
   .formsection button {
     align-self: center;
   }
+
+  /* modal styling */
+  .modal-container {
+    display: flex;
+    gap: 24px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 80px;
+  }
+
+  .side {
+    width: 60%;
+  }
+
+  .modal {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+
+  .close-modal {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 3%;
+    right: 24px;
+    cursor: pointer;
+    justify-self: end;
+    border-style: none;
+    background: none;
+    font-size: 40px;
+  }
+
+  .button {
+    margin-left: 60%;
+  }
+
+  .modal-btn {
+    font-size: 20px;
+  }
+
+  .side-description ul {
+    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-left: 60%;
+  }
+
+  /* modal styling end */
 }
 
 @media (min-width: 1024px) {
@@ -668,7 +795,7 @@ p {
     color: #7f8cff;
   }
 
-  .button {
+  .buttons {
     width: fit-content;
     height: fit-content;
     top: 50%;
@@ -682,7 +809,7 @@ p {
     transition: 0.4s;
   }
 
-  .button-2 {
+  .buttons-2 {
     width: fit-content;
     height: fit-content;
     top: 50%;
@@ -749,5 +876,24 @@ p {
 
   .about-myself-2 {
     width: 50%;
+  }
+
+  .modal-container {
+    display: flex;
+    gap: 24px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+  }
+
+  .modal-btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 8px;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    background-color: #fff;
+    font-size: 25px;
   }
 }
