@@ -338,7 +338,7 @@ p {
   color: #fff;
 }
 
-.formsection p {
+.contact-form-description {
   font-size: 18px;
   line-height: 25px;
   font-weight: 250;
@@ -384,7 +384,7 @@ p {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -395,11 +395,17 @@ p {
   color: #6070ff;
   background-color: #fff;
   border: 1px solid #cfd8dc;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .btn:hover {
   background-color: #ebebff;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-size: 17px;
 }
 
 /* modal styling */
@@ -487,6 +493,10 @@ p {
 @media (max-width: 768px) {
   #menu {
     display: none;
+  }
+
+  .btn {
+    width: 45%;
   }
 }
 
@@ -642,7 +652,6 @@ p {
   #msg {
     width: 400px;
     border-radius: 4px;
-    margin-left: 100px;
   }
 
   #shape-1 {
@@ -661,6 +670,8 @@ p {
 
   .formsection button {
     align-self: center;
+    width: 25%;
+    margin-left: 10%;
   }
 
   /* modal styling */
@@ -767,7 +778,11 @@ p {
   #msg {
     width: 400px;
     border-radius: 4px;
-    margin-left: 190px;
+  }
+
+  .formsection button {
+    font-size: 18px;
+    width: 130px;
   }
 
   .others {
@@ -843,12 +858,34 @@ p {
     line-height: 35px;
   }
 
+  .formsection h2 {
+    font-size: 55px;
+  }
+
+  .formsection p {
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  .formsection button {
+    font-size: 20px;
+    width: 150px;
+  }
+
   #name,
-  #mail,
-  #msg {
-    width: 400px;
+  #mail {
+    font-size: 25px;
+    width: 480px;
     border-radius: 4px;
-    margin-left: 360px;
+    margin-bottom: 20px;
+  }
+
+  #msg {
+    font-size: 25px;
+    width: 480px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    height: 200px;
   }
 
   .about-myself {

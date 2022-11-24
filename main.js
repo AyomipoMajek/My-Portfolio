@@ -141,3 +141,15 @@ const closeModal = function () {
 };
 
 btnCLoseModal.addEventListener('click', closeModal);
+// Form validation
+
+const form = document.getElementById('form');
+const emailRegex = /^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+$/;
+const errorMessage = document.querySelector('.error-message');
+const email = document.getElementById('mail');
+form.addEventListener('submit', (e) => {
+  if (!emailRegex.test(email.value)) {
+    e.preventDefault();
+    errorMessage.style.display = 'block';
+  }
+});
