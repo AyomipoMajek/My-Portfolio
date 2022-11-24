@@ -338,7 +338,7 @@ p {
   color: #fff;
 }
 
-.contact-form-description{
+.contact-form-description {
   font-size: 18px;
   line-height: 25px;
   font-weight: 250;
@@ -877,9 +877,9 @@ p {
     font-size: 25px;
     width: 480px;
     border-radius: 4px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
   }
+  
   #msg {
     font-size: 25px;
     width: 480px;
