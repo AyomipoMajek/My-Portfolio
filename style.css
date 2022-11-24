@@ -488,6 +488,10 @@ p {
   #menu {
     display: none;
   }
+
+  .btn {
+    width: 45%;
+  }
 }
 
 @media (min-width: 768px) {

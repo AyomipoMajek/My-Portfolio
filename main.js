@@ -141,3 +141,11 @@ const closeModal = function () {
 };
 
 btnCLoseModal.addEventListener('click', closeModal);
+
+const form = document.getElementById('contact-box');
+const emailRegex = /^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+$/;
+
+form.addEventListener('submit',(e) => {
+  if(!emailRegex.test(email.value));
+  
+}
