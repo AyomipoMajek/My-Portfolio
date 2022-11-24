@@ -328,6 +328,7 @@ p {
   transition-timing-function: ease-in;
 }
 
+
 .heading-2 {
   padding-top: 30px;
   font-size: 30px;
@@ -338,12 +339,12 @@ p {
   color: #fff;
 }
 
-.formsection p {
+.contact-form-description{
   font-size: 18px;
   line-height: 25px;
   font-weight: 250;
   text-align: center;
-  color: #fff;
+  color: white;
   max-width: 569px;
 }
 
@@ -400,6 +401,12 @@ p {
 
 .btn:hover {
   background-color: #ebebff;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-size: 17px;
 }
 
 /* modal styling */
@@ -521,6 +528,11 @@ p {
 
   .logo i {
     display: none;
+  }
+
+  .error-message {
+    color: red;
+    margin-left: 350px;
   }
 
   #menu {
@@ -666,7 +678,6 @@ p {
   .formsection button {
     align-self: center;
   }
-
   /* modal styling */
   .modal-container {
     display: flex;
@@ -734,6 +745,12 @@ p {
     background: #ebebff;
     border-radius: 8px;
     padding: 4px 12px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 177px;
+    margin-left: 200px;
   }
 
   #menu li {
