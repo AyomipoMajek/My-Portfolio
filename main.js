@@ -4,13 +4,18 @@ const menutray = document.querySelector('.fa-solid');
 const menuContainer = document.querySelector('.menu-container');
 const closebtn = document.querySelector('.close-btn');
 const menuList = document.querySelector('.menuList')
-const modalContainer = document.querySelector('.modal-container');
+const modalContainer = document.querySelector('.modal-out');
 const projectName = document.querySelector('.title');
 const sectionLink = document.querySelector('.menuList');
 const projectImage = document.querySelector('.snapshoot');
 const projectDescription = document.querySelector('.paragraph');
 const modalOverlay = document.querySelector('.modal');
 const projectSection = document.querySelector('.works-section');
+const column = document.querySelector('.column');
+const column1 = document.querySelector('.column1');
+const column2 = document.querySelector('.column2');
+const column3 = document.querySelector('.column3');
+
 //open menu
 const openMenu = function() {
   menuContainer.style.display = "flex";
@@ -91,6 +96,12 @@ const displayModal = (i) => {
   document.getElementById(`${projects[i].btnId}`).addEventListener('click', () => {
     menutray.style.display = 'none';
     modalContainer.style.display = 'flex';
+    column.innerHTML = `<li>
+    ${projects[i].column[0]}</li>
+    <li><img src="images/point.jpg" alt="highlight"></li>
+    <li>${projects[i].column[1]}</li>
+    <li><img src="images/point.jpg" alt="highlight"></li>
+    <li>${projects[i].column[2]}</li>`;
     projectName.innerText = projects[i].title;
     projectImage.src = projects[i].image;
     projectDescription.innerText = projects[i].description;
@@ -106,7 +117,8 @@ projects.forEach((e, i) => {
     <img class="snapshoot ${projects[i].contentDirection}" src="${projects[i].image}" alt="first project card picture">
     <h2>${projects[i].title}</h2>
     <section>
-        <ul class="column">CANOPY
+        <ul class="column">
+          <li>CANOPY<li>
           <li><a href="#"><img src="images/point.jpg" alt="highlight"></a></li>
           <li>Back End Dev</li>
           <li><a href="#"><img src="images/point.jpg" alt="highlight"></a></li>

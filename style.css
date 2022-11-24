@@ -403,11 +403,25 @@ p {
 }
 
 /* modal styling */
-.modal-container {
-  align-self: center;
+.modal-out {
   display: none;
-  flex-direction: column;
+  transition: 0.4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(193, 199, 208, 0.5);
+  backdrop-filter: blur(9.5px);
+}
+
+.modal-container {
+  display: none;
+  align-self: center;
+  transition: 0.9s;
+  display: flex;
   box-sizing: border-box;
+  flex-direction: column;
   background-color: #fff;
   z-index: 1;
   position: fixed;
@@ -426,7 +440,6 @@ p {
 }
 
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -652,36 +665,20 @@ p {
 
   /* modal styling */
 .modal-container {
-  align-self: center;
-  display: none;
-  flex-direction: column;
-  box-sizing: border-box;
-  background-color: #fff;
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  border-radius: 16px;
-  padding: 16px;
-  gap: 18px;
-  margin: 24px;
-  max-height: 95vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  display: flex;
+  gap: 24px;
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-top: 80px;
 }
 
-.modal header {
-  display: flex;
+.side {
+  width: 60%;
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(193, 199, 208, 0.5);
-  backdrop-filter: blur(9px);
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 .close-modal {
@@ -694,28 +691,23 @@ p {
   justify-self: end;
   border-style: none;
   background: none;
-  font-size: 20px;
+  font-size: 40px;
+}
+
+.button {
+  margin-left: 60%;
 }
 
 .modal-btn {
-  width: fit-content;
-  height: fit-content;
-  padding: 15px;
-  border-radius: 8px;
-  color: #396df2;
-  border: 1px solid #6070ff;
-  background-color: #fff;
-  font-size: 14px;
-}
-
-.modal-btn img {
-  padding-left: 5px;
+  font-size: 20px;
 }
 
 .side-description ul {
   margin-bottom: 12px;
   margin-top: 12px;
+  margin-left: 60%;
 }
+
 /* modal styling end */
 }
 
@@ -884,5 +876,24 @@ p {
 
   .about-myself-2 {
     width: 50%;
+  }
+
+  .modal-container {
+    display: flex;
+    gap: 24px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+  }
+
+  .modal-btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 8px;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    background-color: #fff;
+    font-size: 25px;
   }
 }
