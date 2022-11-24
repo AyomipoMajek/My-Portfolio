@@ -164,7 +164,7 @@ ul {
 }
 
 .column li {
-  color: #7a869a
+  color: #7a869a;
 }
 
 .works li {
@@ -416,10 +416,9 @@ p {
 }
 
 .modal-container {
-  display: none;
+  display: flex;
   align-self: center;
   transition: 0.9s;
-  display: flex;
   box-sizing: border-box;
   flex-direction: column;
   background-color: #fff;
@@ -482,7 +481,7 @@ p {
   margin-bottom: 12px;
   margin-top: 12px;
 }
-/* modal styling end */
+  /* modal styling end */
 
 @media (max-width: 768px) {
   #menu {
@@ -664,51 +663,50 @@ p {
   }
 
   /* modal styling */
-.modal-container {
-  display: flex;
-  gap: 24px;
-  margin-left: 110px;
-  margin-right: 110px;
-  margin-top: 80px;
-}
+  .modal-container {
+    display: flex;
+    gap: 24px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 80px;
+  }
 
-.side {
-  width: 60%;
-}
+  .side {
+    width: 60%;
+  }
 
-.modal {
-  margin-left: 50%;
-  margin-right: 50%;
-}
+  .modal {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
 
-.close-modal {
-  position: absolute;
-  height: 24px;
-  width: 24px;
-  top: 3%;
-  right: 24px;
-  cursor: pointer;
-  justify-self: end;
-  border-style: none;
-  background: none;
-  font-size: 40px;
-}
+  .close-modal {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 3%;
+    right: 24px;
+    cursor: pointer;
+    justify-self: end;
+    border-style: none;
+    background: none;
+    font-size: 40px;
+  }
 
-.button {
-  margin-left: 60%;
-}
+  .button {
+    margin-left: 60%;
+  }
 
-.modal-btn {
-  font-size: 20px;
-}
+  .modal-btn {
+    font-size: 20px;
+  }
 
-.side-description ul {
-  margin-bottom: 12px;
-  margin-top: 12px;
-  margin-left: 60%;
-}
-
-/* modal styling end */
+  .side-description ul {
+    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-left: 60%;
+  }
+  /* modal styling end */
 }
 
 @media (min-width: 1024px) {
